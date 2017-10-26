@@ -11,7 +11,7 @@ mod = SourceModule("""
 __global__ void streamPerf(float * __restrict__ const dest, float const * __restrict__ const a)
 {
   const int i = (blockDim.x * blockIdx.x + threadIdx.x);
-  dest[i] += a[i];
+  dest[i] = a[i];
 }
 """)
 
