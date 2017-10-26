@@ -32,7 +32,7 @@ multiply_them = mod.get_function("multiply_them")
 
 threadsPerBlock = 1000
 numBlocks = 2000
-count = 1000
+count = 10000
 a = np.random.randn(threadsPerBlock * numBlocks  ).astype(np.float32)
 b = np.random.randn(threadsPerBlock * numBlocks  ).astype(np.float32)
 c = np.random.randn(threadsPerBlock * numBlocks  ).astype(np.float32)
